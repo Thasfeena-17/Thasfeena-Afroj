@@ -1,1 +1,94 @@
+//POSITIVE OR NEGATIVE
 
+#include <stdio.h>
+int main()
+{
+	int num;
+	printf("enter the number");
+	scanf("%d",&num);
+	if(num<0)
+	printf("number is negative");
+	else if(num>0)
+	printf("number is positive");
+	else
+	printf("zero");
+	}
+
+//ODD OR EVEN
+
+#include <stdio.h>
+int main()
+{
+	int num;
+	printf("enter the number");
+	scanf("%d",&num);
+	if(num%2==0)
+	printf("number is even");
+	else 
+	printf("number is odd");
+	
+	}
+
+//GREATEST OF TWO NUMBERS
+
+#include <stdio.h>
+int main()
+{
+	int num1,num2;
+	printf("enter the number1 and number2");
+	scanf("%d%d",&num1,&num2);
+	if(num1>num2)
+	printf("number1 is greater");
+	else 
+	printf("number2 is greater");
+	
+}
+
+//GREATEST OF THREE NUMBERS
+
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("enter the number1 ,number2 and number3");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b && a>c)
+	printf("%d is greater",a);
+	else if(b>a && b>c)
+	printf("%d is greater",b);
+	else 
+	printf("%d is greater",c);
+	
+	}
+
+//LEAP YEAR OR NOT
+
+#include <stdio.h>
+int main()
+{
+	int year;
+	printf("enter the year");
+	scanf("%d",&year);
+	if(year%4==0)
+	printf("%d is leap year",year);
+	else if(year%400==0 && year%100!=0)
+	printf("%d is leap year",year);
+	else 
+	printf("%d is not leap year",year);
+	
+	}
+
+//SUM OF NATURAL NUMBERS
+
+#include <stdio.h>
+int main()
+{
+	int n,i;
+	int sum=0;
+	printf("enter the n value");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	sum+=i;
+	printf("sum of 	%d numbers is :%d",n,sum);
+	return 0;
+	}
