@@ -26,7 +26,6 @@ int main()
 	printf("number is even");
 	else 
 	printf("number is odd");
-	
 	}
 
 3//SUM OF NUMBERS IN A GIVEN RANGE
@@ -54,8 +53,7 @@ int main()
 	printf("number1 is greater");
 	else 
 	printf("number2 is greater");
-	
-}
+	}
 
 5//GREATEST OF THREE NUMBERS
 
@@ -140,4 +138,96 @@ int main()
     return 0;
 }
 
-10//	
+10//REVERSE O A NUMBER
+
+#include <stdio.h>
+int main()
+{ 
+    int num,i,rem,reverse=0;
+    printf("enter the num");
+    scanf("%d",&num);
+    while(num!=0){
+    rem=num%10;
+    reverse=reverse*10+rem;
+    num=num/10;
+    }
+    printf("reverse of a number:%d",reverse);
+    return 0;
+}
+
+11//PALINDROME OR NOT
+
+#include <stdio.h>
+int main()
+{ 
+    int num,rem,reverse=0,temp;
+    printf("enter the num");
+    scanf("%d",&num);
+    temp=num;
+    while(temp!=0){
+    rem=temp%10;
+    reverse=reverse*10+rem;
+    temp=temp/10;
+    }
+    if(num==reverse)
+    printf("%d is palindrome",num);
+    else
+    printf("%d is not palindrome",num);
+    return 0;
+}
+
+12//AMSTRONG NUMBER
+
+#include <stdio.h>
+int main()
+{ 
+    int num,rem,reverse=0,temp,result;
+   
+    printf("enter the num");
+    scanf("%d",&num);
+    temp=num;
+    while(temp!=0){
+    rem=temp%10;
+    result=result+rem*rem*rem;
+    temp=temp/10;
+    }
+    if(num==result)
+    printf("%d is amstrong",num);
+    else
+    printf("%d is not amstrong",num);
+    return 0;
+}
+
+14//POWER OF A NUMBER
+
+#include <stdio.h>
+int main()
+{ 
+    int base,expo,result=1;
+    printf("enter the base");
+    scanf("%d",&base);
+    printf("enter the exponential");
+    scanf("%d",&expo);
+    while(expo!=0){
+    result=result*base;
+    --expo;
+    }
+     printf("power of a number is:%d",result);
+      return 0;
+}
+
+15//FACTORIAL
+
+#include <stdio.h>
+int main()
+{ 
+    int num,fact=1,i;
+    printf("enter the num");
+    scanf("%d",&num);
+    for(i=1;i<=num;i++){
+        fact=fact*i;
+    }
+    
+     printf("factorial of a number is:%d",fact);
+      return 0;
+}
